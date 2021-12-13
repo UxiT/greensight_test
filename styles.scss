@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$blue-1: #0093e9;
+$blue-2: #80d0c7;
+$red: #e03434;
+$text: #2b2b2b;
+$font: "Raleway", sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  color: $text;
+}
+
+.headline {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: $blue-1;
+  background-image: linear-gradient(160deg, $blue-1 0%, $blue-2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  width: 460px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+#main-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input:not(input[type="submit"]) {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0.9rem;
+  border: none;
+  border-bottom: 2px #e4e4e4 solid;
+  font-size: 1rem;
+  color: $text;
+  font-family: $font;
+  font-weight: 400;
+
+  &:focus,
+  &:focus-within,
+  &:active {
+    outline: none;
+  }
+}
+
+label {
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+input[type="submit"] {
+  border: none;
+  background: none;
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-family: $font;
+  font-size: 1.2rem;
+  background: #8c1bab;
+  padding: 1.2rem 0;
+  color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #8c1bab 0%, #e2b0ff 100%);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-position: right;
+  }
+}
+
+.error {
+  font-size: 14px;
+  color: $red;
+  font-weight: 600;
+  max-width: 80%;
+  margin-bottom: 15px;
+}
+
+.white_box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__headline {
+    padding: 50px;
+  }
+}

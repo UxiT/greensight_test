@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #2b2b2b;
+}
+
+.headline {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-content {
+  width: 460px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+#main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input:not(input[type="submit"]) {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0.9rem;
+  border: none;
+  border-bottom: 2px #e4e4e4 solid;
+  font-size: 1rem;
+  color: #2b2b2b;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+input:not(input[type="submit"]):focus, input:not(input[type="submit"]):focus-within, input:not(input[type="submit"]):active {
+  outline: none;
+}
+
+label {
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+input[type="submit"] {
+  border: none;
+  background: none;
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  background: #8c1bab;
+  padding: 1.2rem 0;
+  color: #fff;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#8c1bab), to(#e2b0ff));
+  background: linear-gradient(90deg, #8c1bab 0%, #e2b0ff 100%);
+  background-size: 200% 100%;
+  background-position: left;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  background-position: right;
+}
+
+.error {
+  font-size: 14px;
+  color: #e03434;
+  font-weight: 600;
+  max-width: 80%;
+  margin-bottom: 15px;
+}
+
+.white_box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.white_box__headline {
+  padding: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
